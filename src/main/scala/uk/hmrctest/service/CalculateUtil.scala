@@ -24,11 +24,10 @@ object CalculateUtil {
   }
 
   def convertToItem(name: String): Item = {
-
-    if (name == null) throw new NullPointerException
-    if (name.compareToIgnoreCase("Orange") == 0) return new Orange
-    if (name.compareToIgnoreCase("Apple") == 0) return new Apple
-
-    null
+    name.toUpperCase match {
+      case null => throw new NullPointerException
+      case "ORANGE" => new Orange
+      case "APPLE" => new Apple
+    }
   }
 }
