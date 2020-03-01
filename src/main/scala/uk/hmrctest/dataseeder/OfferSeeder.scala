@@ -3,8 +3,17 @@ package uk.hmrctest.dataseeder
 import uk.hmrctest.item.ItemType._
 import uk.hmrctest.offer.Offer
 
+/**
+ * create offers using native javascript.
+ * we can hold this scripts in database and change while application is up
+ * @author Benan Aktas <benan.aktas@pusulait.com>
+ */
 object OfferSeeder {
 
+  /**
+   *
+   * @return
+   */
   def createOffers: List[Offer] = {
 
     var name = "appleOffer"

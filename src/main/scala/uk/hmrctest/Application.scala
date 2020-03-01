@@ -4,6 +4,9 @@ import java.util.Scanner
 
 import uk.hmrctest.service.{CalculateService, CalculateUtil}
 
+/**
+ * @author Benan Aktas <benan.aktas@pusulait.com>
+ */
 object Application extends App {
 
   val scanner = new Scanner(System.in)

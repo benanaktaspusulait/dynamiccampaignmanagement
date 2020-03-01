@@ -9,10 +9,19 @@ import uk.hmrctest.service.CalculateUtil.Basket
 
 import scala.math.BigDecimal.RoundingMode
 
+/**
+ * calculation service
+ * @author Benan Aktas <benan.aktas@pusulait.com>
+ */
 object CalculateService {
 
   val SCRIPT_ENGINE_NAME = "nashorn"
 
+  /**
+   *
+   * @param basket
+   * @param itemList
+   */
   def calculate(basket: Basket, itemList: Array[Item]): Unit = {
 
     var totalAmount = BigDecimal(0)
